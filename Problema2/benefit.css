@@ -1,0 +1,10 @@
+*{
+    font-family: "Arial";
+    text-align: center;
+    vertical-align: auto;
+}
+
+.verticalForm {
+    display: inline-block;
+    vertical-align: middle;
+}

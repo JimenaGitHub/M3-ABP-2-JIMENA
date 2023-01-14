@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="benefit.css">
+</head>
+<body>
+
+   <h1>Subsidio de arriendo de vivienda</h1>
+
+   <h2>Rellena el siguiente formulario para saber si puedes optar al beneficio:</h2>
+<div>
+    <h2>1. Ingresa tu nombre completo/h2>
+    <input type="text" id="name" class="selection">
+</div>
+
+<div>
+    <h2>2. ¿Eres mayor de edad?</h2>
+    <input onclick="checkBox()" id="age" class="selection" type="checkbox"><span>Sí</span>
+    <input type="checkbox"><span>No</span>
+</div>
+<div>
+    <h2>2. ¿Tu cédula de identidad está vigente?</h2>
+    <input onclick="checkBox()" id="ID" class="selection" type="checkbox"><span>Sí</span>
+    <input type="checkbox"><span>No</span>
+</div>
+<div>
+    <h2>3. ¿Tienes un ahorro de mínimo 4 UF?</h2>
+    <input onclick="checkBox()" id="savings" class="selection" type="checkbox"><span>Sí</span>
+    <input type="checkbox"><span>No</span>
+</div>
+<div id="extra">
+    <h2>¿En dónde tienes esos fondos?</h2>
+    <input onclick="checkBox()" id="savings-place" class="selection" type="checkbox"><span>Cuenta de Ahorro</span>
+    <input type="checkbox"><span>Otro lugar</span>
+</div>
+<div>
+    <h2>4. ¿Cuál es tu calificación socioeconómica en el Registro Social de Hogares?</h2>
+    <input id="percentaje" type="text" placeholder="Entre 0 y 100%">
+</div>
+<div>
+    <h2>5. ¿Con quién vas a postular?</h2>
+    <input onclick="checkBox()" id="conyuge" class="selection" type="checkbox"><span>Cónyuge</span>
+    <input onclick="checkBox()" id="partner" class="selection" type="checkbox"><span>Conviviente Civil</span> 
+    <input onclick="checkBox()" id="child" class="selection" type="checkbox"><span>Hijo/a</span> 
+    <input type="checkbox"><span>Otro/a</span>
+</div>
+<div>
+    <h2>6. ¿Cuánto es el ingreso mensual de tu núcleo familiar?</h2>
+    <input id="earnings" type="text" placeholder="Sin puntos ni signos">
+</div>
+<div>
+    <h2>7. ¿Eres beneficiario/a de algún programa habitacional MINVU?</h2>
+    <input type="checkbox"><span>Sí</span>
+    <input onclick="checkBox()" id="program" class="selection" type="checkbox"><span>No</span>
+</div>
+</section>
+<div>
+<button id="send-info" onclick ="buttonPressed()" class="send">Enviar</button>
+</div>
+
+<script src="benefit.js"></script>
+    
+</body>
+</html>
