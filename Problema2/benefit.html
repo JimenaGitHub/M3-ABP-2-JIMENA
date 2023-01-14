@@ -9,12 +9,26 @@
 </head>
 <body>
 
-   <h1>Subsidio de arriendo de vivienda</h1>
+<h1 style="text-align: center;">Subsidio de arriendo de vivienda</h1>
 
-   <h2>Rellena el siguiente formulario para saber si puedes optar al beneficio:</h2>
+<div class="requirements"> 
+<h2 class="h2">Requisitos:
+
+    <p>● Ser mayor de 18 años al momento de postular.</p>
+    <p>● Contar con cédula de identidad vigente (personas extranjeras deben presentar cédula de identidad para extranjeros).</p>  
+    <p>● Acreditar ahorro mínimo de 4 UF en una cuenta de ahorro para la vivienda a nombre del postulante, su cónyuge o conviviente civil.</p>   
+    <p>● Pertenecer hasta el 70% más vulnerable de la población, según calificación socioeconómica del Registro Social de Hogares.</p>    
+    <p>● Postular al menos con su cónyuge, conviviente civil, conviviente o hijo o hija (personas mayores de 60 años, no requieren contar con núcleo familiar).</p>    
+    <p>● Acreditar que el monto total de ingresos del núcleo familiar está entre las 7 y 25 UF.</p>  
+    <p>● No ser propietario(a), beneficiario(a) de otros programas habitacionales del Ministerio de Vivienda y Urbanaismo (MINVU). </p>    
+</h2>
+</div>
+
+<h3 class="fillIn">Rellena el siguiente formulario:</h3>
+
 <div>
-    <h2>1. Ingresa tu nombre completo/h2>
-    <input type="text" id="name" class="selection">
+    <h2>1. Ingresa tu nombre completo</h2>
+    <input type="text" id="name" class="wholeName">
 </div>
 
 <div>
@@ -22,41 +36,48 @@
     <input onclick="checkBox()" id="age" class="selection" type="checkbox"><span>Sí</span>
     <input type="checkbox"><span>No</span>
 </div>
+
 <div>
-    <h2>2. ¿Tu cédula de identidad está vigente?</h2>
+    <h2>3. Cuentas con cédula de identidad vigente?</h2>
     <input onclick="checkBox()" id="ID" class="selection" type="checkbox"><span>Sí</span>
     <input type="checkbox"><span>No</span>
 </div>
+
 <div>
-    <h2>3. ¿Tienes un ahorro de mínimo 4 UF?</h2>
+    <h2>4. ¿Tienes un ahorro de mínimo 4 UF para postular?</h2>
     <input onclick="checkBox()" id="savings" class="selection" type="checkbox"><span>Sí</span>
     <input type="checkbox"><span>No</span>
 </div>
+
 <div id="extra">
-    <h2>¿En dónde tienes esos fondos?</h2>
+    <h2>5. ¿Dónde tienes esos fondos?</h2>
     <input onclick="checkBox()" id="savings-place" class="selection" type="checkbox"><span>Cuenta de Ahorro</span>
     <input type="checkbox"><span>Otro lugar</span>
 </div>
+
 <div>
-    <h2>4. ¿Cuál es tu calificación socioeconómica en el Registro Social de Hogares?</h2>
-    <input id="percentaje" type="text" placeholder="Entre 0 y 100%">
+    <h2>6. ¿Cuál es tu calificación socioeconómica en el Registro Social de Hogares?</h2>
+    <input id="porcentaje" type="text" placeholder="Entre 0 y 100%">
 </div>
+
 <div>
-    <h2>5. ¿Con quién vas a postular?</h2>
+    <h2>7. ¿Con quién vas a postular?</h2>
     <input onclick="checkBox()" id="conyuge" class="selection" type="checkbox"><span>Cónyuge</span>
     <input onclick="checkBox()" id="partner" class="selection" type="checkbox"><span>Conviviente Civil</span> 
     <input onclick="checkBox()" id="child" class="selection" type="checkbox"><span>Hijo/a</span> 
     <input type="checkbox"><span>Otro/a</span>
 </div>
+
 <div>
-    <h2>6. ¿Cuánto es el ingreso mensual de tu núcleo familiar?</h2>
+    <h2>8. ¿Cuánto es el ingreso mensual de tu núcleo familiar?</h2>
     <input id="earnings" type="text" placeholder="Sin puntos ni signos">
 </div>
 <div>
-    <h2>7. ¿Eres beneficiario/a de algún programa habitacional MINVU?</h2>
+    <h2>9. ¿Eres beneficiario/a de algún programa habitacional MINVU?</h2>
     <input type="checkbox"><span>Sí</span>
     <input onclick="checkBox()" id="program" class="selection" type="checkbox"><span>No</span>
 </div>
+
 </section>
 <div>
 <button id="send-info" onclick ="buttonPressed()" class="send">Enviar</button>
